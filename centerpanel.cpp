@@ -1823,7 +1823,7 @@ QWidget* CenterPanel::buildStudyPlanPage()
         habitTitle->setStyleSheet("color: #e2e0f0; font-size: 16px; font-weight: bold;");
         ml->addWidget(habitTitle);
 
-        QLabel *habitDesc = new QLabel(QString::fromUtf8("参照番茄Todo模式：每天/每周/每月坚持"), page);
+        QLabel *habitDesc = new QLabel(QString::fromUtf8("每天/每周/每月坚持"), page);
         habitDesc->setStyleSheet("color: #6e6a88; font-size: 11px; padding-bottom: 4px;");
         habitDesc->setWordWrap(true);
         ml->addWidget(habitDesc);
