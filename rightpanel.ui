@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RightPanel</class>
+ <widget class="QWidget" name="RightPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>290</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>260</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>320</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    #RightPanel {
+      background: rgba(15, 12, 41, 0.75);
+      border-left: 1px solid rgba(255, 255, 255, 0.10);
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="rightMainLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <!-- Header -->
+    <widget class="QLabel" name="rightHeaderLabel">
+     <property name="text">
+      <string>  状态面板</string>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>38</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+       QLabel {
+         color: #6e6a88;
+         font-size: 11px;
+         font-weight: bold;
+         letter-spacing: 3px;
+         background: transparent;
+         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+         padding: 12px 0px;
+       }
+      </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <!-- Scroll Area for status cards -->
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+       QScrollArea { background: transparent; border: none; }
+       QScrollBar:vertical {
+         background: transparent;
+         width: 4px;
+         margin: 0;
+       }
+       QScrollBar::handle:vertical {
+         background: rgba(255,255,255,0.08);
+         border-radius: 2px;
+         min-height: 20px;
+       }
+       QScrollBar::handle:vertical:hover {
+         background: rgba(255,255,255,0.15);
+       }
+       QScrollBar::add-line:vertical,
+       QScrollBar::sub-line:vertical {
+         height: 0px;
+       }
+      </string>
+     </property>
+     <widget class="QWidget" name="scrollContent">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>270</width>
+        <height>860</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#scrollContent { background: transparent; }</string>
+      </property>
+      <layout class="QVBoxLayout" name="scrollContentLayout">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <!-- Status cards added programmatically in RightPanel.cpp -->
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

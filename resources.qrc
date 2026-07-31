@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/style/timetable_view.png</file>
+        <file>resources/style/timetable_edit.png</file>
+        <file>resources/style/study_plan.png</file>
+        <file>resources/style/completed.png</file>
+        <file>resources/style/skills.png</file>
+        <file>resources/style/review.png</file>
+        <file>resources/style/home.png</file>
+        <file>resources/style/achievement.png</file>
+        <file>resources/style/cat.png</file>
+        <file>resources/style/global.qss</file>
+        <file>resources/backgrounds/background.png</file>
+    </qresource>
+</RCC>

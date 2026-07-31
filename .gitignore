@@ -1,0 +1,114 @@
+# ============================================================
+# .gitignore — Life Manager
+# ============================================================
+
+# --- 构建目录 ---
+build/
+build-debug/
+release/
+out/
+
+# --- Qt Creator 用户设置 ---
+.qtcreator/
+*.pro.user
+*.pro.user.*
+
+# --- Qt 自动生成文件 ---
+moc_*.cpp
+moc_*.h
+moc_predefs.h
+ui_*.h
+qrc_*.cpp
+mocs_compilation.cpp
+*.qrc.depends
+
+# --- 编译产物 ---
+*.o
+*.obj
+*.exe
+*.dll
+*.a
+*.so
+*.dylib
+*.d
+*.ilk
+*.pdb
+*.exp
+*.lib
+*.res
+*.tlog
+*.lastbuildstate
+*.idb
+*.pch
+*.ipch
+
+# --- CMake 生成文件 ---
+CMakeCache.txt
+cmake_install.cmake
+CMakeFiles/
+CTestTestfile.cmake
+Testing/
+*.cmake
+
+# --- QMake 生成文件 ---
+Makefile
+Makefile.*
+.qmake.stash
+.qmake.cache
+.qmake.super
+
+# --- IDE / 编辑器 ---
+.vs/
+.vscode/
+.idea/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.sln.docstates
+
+# --- 操作系统生成文件 ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# --- 临时文件 ---
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+*.autosave
+*.swp
+*.swo
+
+# --- 日志文件 ---
+*.log
+
+# --- AI 工具本地设置 ---
+.claude/
+
+# --- 用户数据（绝不上传） ---
+*.lifedata
+lifedata.json
+*.userdata
+
+# --- clangd / 语言服务器 ---
+compile_commands.json
+.cache/
+.clangd/
+
+# --- 压缩包 ---
+*.zip
+*.7z
+*.rar
+*.tar.gz
+
+# --- 备份目录 ---
+*_backup/
+backup/
