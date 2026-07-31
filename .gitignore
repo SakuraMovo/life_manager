@@ -12,6 +12,7 @@ out/
 .qtcreator/
 *.pro.user
 *.pro.user.*
+*.autosave
 
 # --- Qt 自动生成文件 ---
 moc_*.cpp
